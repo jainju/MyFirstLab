@@ -1,0 +1,13 @@
+name: Running sheel script
+
+on: push
+
+jobs:
+    ascii_job:
+        runs-on: ubuntu-latest
+        steps:
+        - name: Checkout Repo
+          uses: actions/checkout@v4
+        - name: Executing Shell Script
+          run: ./ascii-script.yaml
+        
